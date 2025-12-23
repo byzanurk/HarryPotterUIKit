@@ -6,3 +6,15 @@
 //
 
 import Foundation
+import UIKit
+
+final class CharactersViewBuilder {
+    static func build(coordinator: CoordinatorProtocol) -> CharactersViewController {
+        
+        let viewController = CharactersViewController()
+        let httpClient = HttpClient()
+        //
+        
+        return viewController
+    }
+}

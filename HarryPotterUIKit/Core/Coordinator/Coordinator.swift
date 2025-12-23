@@ -22,9 +22,9 @@ final class Coordinator: CoordinatorProtocol {
     }
     
     func start() -> UITabBarController {
-//        let tabBar = TabBarBuilder.build(coordinator: self)
-//        self.tabBarController = tabBar
-//        return tabBar
+        let tabBar = TabBarBuilder.build(coordinator: self)
+        self.tabBarController = tabBar
+        return tabBar
     }
     
 }

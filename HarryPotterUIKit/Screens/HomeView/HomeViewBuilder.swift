@@ -8,8 +8,14 @@
 import Foundation
 import UIKit
 
-struct HomeViewBuilder {
-//    static func build(coordinator: CoordinatorProtocol) -> UIViewController {
-//        
-//    }
+final class HomeViewBuilder {
+    static func build(coordinator: CoordinatorProtocol) -> HomeViewController {
+        
+        let viewController = HomeViewController()
+        let httpClient = HttpClient()
+        //
+        
+        return viewController
+    }
 }
+

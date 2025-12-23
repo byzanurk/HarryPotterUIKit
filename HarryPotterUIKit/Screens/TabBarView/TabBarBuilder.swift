@@ -10,7 +10,7 @@ import UIKit
 
 final class TabBarBuilder {
     static func build(coordinator: CoordinatorProtocol) -> UITabBarController {
-        let tabBar = UITabBarController(coordinator: coordinator)
+        let tabBar = TabBarController(coordinator: coordinator)
         return tabBar
     }
 }
