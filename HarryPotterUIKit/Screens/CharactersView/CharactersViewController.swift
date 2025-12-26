@@ -7,12 +7,21 @@
 
 import UIKit
 
+protocol CharactersViewProtocol {
+    //
+}
+
 final class CharactersViewController: UIViewController {
+    
+    var presenter: CharactersViewPresenterProtocol?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .blue
 
     }
 
+}
+
+extension CharactersViewController: CharactersViewProtocol {
+    //
 }

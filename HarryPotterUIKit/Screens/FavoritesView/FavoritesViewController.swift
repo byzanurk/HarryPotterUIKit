@@ -7,12 +7,21 @@
 
 import UIKit
 
-class FavoritesViewController: UIViewController {
+protocol FavoritesViewProtocol {
+    //
+}
 
+final class FavoritesViewController: UIViewController {
+
+    var presenter: FavoritesViewPresenterProtocol?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
 
     }
 
+}
+
+extension FavoritesViewController: FavoritesViewProtocol {
+    //
 }

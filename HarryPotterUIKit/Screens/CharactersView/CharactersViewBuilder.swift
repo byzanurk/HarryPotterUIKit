@@ -13,7 +13,14 @@ final class CharactersViewBuilder {
         
         let viewController = CharactersViewController()
         let httpClient = HttpClient()
-        //
+        let interactor = CharactersViewInteractor(httpClient: httpClient)
+        let router = CharactersViewRouter(coordinator: coordinator)
+        let presenter = CharactersViewPresenter(interactor: interactor,
+                                                router: router,
+                                                view: viewController)
+        
+        viewController.presenter = presenter
+        interactor.presenter = presenter
         
         return viewController
     }
